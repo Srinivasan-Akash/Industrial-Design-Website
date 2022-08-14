@@ -1,0 +1,294 @@
+/* Removeing the styles added by browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+.mob-nav{
+    display: none;
+}
+/* Colors */
+.nav-items, .left-section{
+    color: rgb(31, 40, 115);
+}
+
+/* Style Buttons Which look alike */
+.learn-more-btn, .signin-btn, .mob-btn{
+    background: linear-gradient(
+        50deg,
+        rgb(150, 92, 242), 
+        rgb(255, 138, 220));
+    color: #fff;
+    border-radius: 30px;
+    padding: 2px 15px;
+    border: none;
+    z-index: 2;
+}
+
+.mob-btn{
+    margin-top: 20px;
+}
+
+/* Designing Nav Bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+nav .nav-items{
+    display: flex;
+    font-size: 1.3em;
+}
+
+nav .nav-items .nav-item{
+    padding: 5%;
+    z-index: 2;
+}
+
+nav .nav-items {
+    margin-right: 10%;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav .signin-btn, .mob-btn{
+    font-size: 1.1em;
+}
+
+/* Designing the left portion of the web page */
+body{
+    overflow-x: hidden;
+}
+
+.intro-section .left-section{
+    position: fixed;
+    right: 50%;
+    left: 11%;
+    top: 28%;
+}
+
+.left-section h1{
+    font-size: 60px;
+}
+
+.left-section h4{
+    width: 320px;
+    text-align: left;
+    line-height: 1.8;
+    margin-top: 6%;
+}
+
+.learn-more-btn{
+    padding: 15px 40px;
+    font-size: 18px;
+    margin-top: 6%;
+}
+
+/* Designing the right portion of the web page */
+
+.vector-dot + img {
+    height: 500px;
+    background: url('../images/backcover.svg');
+    background-repeat: no-repeat; 
+    background-size: contain;
+    position: absolute;
+    right: -3%;
+    top: 0%;    
+    padding: 4% 5% 0 0;
+} 
+
+.vector-dot{
+    position: absolute;
+    top:70%;
+    right: 38%;
+}
+
+.vector-img{
+    position: absolute;
+    top:68%;
+    right: 36%;
+}
+
+/* Extra Features */
+.main-div nav img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+button:hover{
+    animation-name: hoverEffect;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+::selection{
+    background-color: rgb(255, 138, 220);
+}
+
+.nav-item:hover{
+    background: linear-gradient(
+        0deg,
+        rgb(150, 92, 242),
+        rgb(255, 138, 220)
+        );
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+
+
+@keyframes hoverEffect {
+    0% {
+        background: linear-gradient(
+        0deg,
+        rgb(150, 92, 242),
+        rgb(255, 138, 220)
+        );
+    }
+    25% {
+        background: linear-gradient(
+        90deg,
+        rgb(150, 92, 242),
+        rgb(255, 138, 220) 
+        );
+    }
+
+    50% {
+        background: linear-gradient(
+        180deg,
+        rgb(150, 92, 242),
+        rgb(255, 138, 220) 
+        );
+    }
+
+    100% {
+        background: linear-gradient(
+        260deg,
+        rgb(150, 92, 242),
+        rgb(255, 138, 220) 
+        );
+    }
+}
+
+
+@media only screen and (min-width: 370px) and (max-width: 480px) {
+    .nav-item{
+        display: none;
+    }
+
+    .vector-dot + img{
+        display: none;
+    }
+
+    .vector-dot{
+        position: absolute;
+        top:80%;
+        right: 25%;
+    }
+    
+    .vector-img{
+        position: absolute;
+        top:80%;
+        right: 20%;
+    }
+
+    .left-section h1{
+        font-size: 40px !important;
+        width: 800px !important;
+    }
+
+    .learn-more-btn{
+        padding: 15px 20px !important;
+    }
+/* #f5c0ef #ddb6f4 */
+    .mob-nav{
+        background: linear-gradient(to bottom left, #f5c0ef, #b352eb);
+        height: 100vh;
+        width: 60vw;
+        position: absolute;
+        top: 0%;
+        left: -300%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+      }
+      
+      .remove{
+        left: 0%;
+      }
+      
+      .mob-list{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.2em;
+      }
+      
+      .mob-list li{
+        margin-top: 20%;
+      }
+
+    
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /* border: 3px solid #fff; */
+    }
+    .menu-btn__burger {
+        width: 25px;
+        height: 3px;
+        background: #000;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+    }
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background: #000;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+    }
+    .menu-btn__burger::before {
+        transform: translateY(-8px);
+    }
+    .menu-btn__burger::after {
+        transform: translateY(8px);
+    }
+
+    .signin-btn{
+        display: none;
+    }
+
+    /* ANIMATION */
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }      
+}
