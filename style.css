@@ -192,4 +192,112 @@ nav .list{
         font-size: 30px;
         width: 300px;
     }
+    
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /* border: 3px solid #fff; */
+      }
+      .menu-btn__burger {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before,
+      .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+      }
+      .menu-btn__burger::before {
+        transform: translateY(-8px);
+      }
+      .menu-btn__burger::after {
+        transform: translateY(8px);
+      }
+      /* ANIMATION */
+      .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+      .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }  
+      
+      .mob-nav{
+        background-color: #fff;
+        height: 100vh;
+        width: 60vw;
+        position: absolute;
+        top: 0%;
+        left: -300%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+      }
+      
+      .remove{
+        left: 0%;
+      }
+      
+      .mob-list{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.2em;
+      }
+      
+      .mob-list li{
+        margin-top: 20%;
+      }
+
+      .logo img{
+        width: 80px !important;
+      }
+
+      .popup1, .popup2{
+        width: 150px !important;
+        height: 100px !important;
+        font-size: 13px;
+      }
+
+      .main .popup1, .popup2{
+        position: absolute;
+        top: 45%;
+        right:9%;
+        color: #fff;
+        width: 200px;
+        background: rgb(48,69,86);
+        padding: 20px;
+    }
+    
+    .popup2{
+        top: 75%;
+        right: 40%;
+    }
+
+    .lines{
+        top:65%;
+    }
 }
