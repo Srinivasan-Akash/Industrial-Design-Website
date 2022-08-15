@@ -12,8 +12,6 @@ body, html {
 
 body{
     /* The image used */
-
-
     background:url("https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg?w=740&t=st=1658736372~exp=1658736972~hmac=311c3078c75c077f05413965e0086087aa07936d8a53d305cd8db53f76a2d4f4");
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,6 +177,10 @@ nav .list{
     align-items: center;
 }
 
+.mob-nav{
+    display: none;
+}
+
 @media only screen and (min-width: 370px) and (max-width: 480px) {
     .list ul li, .list .contact{
         display: none;
@@ -266,10 +268,20 @@ nav .list{
         justify-content: center;
         flex-direction: column;
         font-size: 1.2em;
+        color: #082033;
+        font-weight: 800;
       }
       
       .mob-list li{
         margin-top: 20%;
+      }
+
+            
+      .mob-list li:hover{
+        background-color: #082033;
+        color: #fff;
+        transition: all 1s ease;
+        padding: 5px 150%;
       }
 
       .logo img{
