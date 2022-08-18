@@ -9,10 +9,16 @@ Hope you like my project !! And Note that I haven't made it responsive it only w
   - CSS - Cascadeing Spread Sheet
   - CSS Flex Box
 
-## Demo
+## Demo In Laptop Screens
 
 
 https://user-images.githubusercontent.com/108281031/180764677-7ceeda53-b69f-4292-8b0f-0b9c25a8e3c6.mp4
+
+## Demo In Mobile Screens
+
+
+https://user-images.githubusercontent.com/108281031/185390790-a11d0ff6-4395-4051-b6a1-e213825c73d6.mp4
+
 
 
 ## Run Locally
@@ -28,6 +34,10 @@ Go to the project directory
 ```bash
   cd Industrial-Design-Website
 ```
+
+## Live Link (Hosted in Netlify)
+[Click Me](https://quiet-semolina-6b674e.netlify.app)
+
 ## Author and Contact
 - [Akash Srinivasan](https://www.github.com/octokatherine)
     - [Coder Community](https://web.codercommunity.io/user/62d568cb998d86c8883a2766?tab=posts)
@@ -40,8 +50,9 @@ Go to the project directory
 - Button Hover Effect
 - Transparent Pop up's
 - Logo Hover effect
-- UI/UX Design
+- Amazing UI/UX Design
 - One Pager Website
+- Mobile Responsive
 
 ## What i have learnt By working on this project
 1. Had a hands on practise on `z-index`, `opacity`, `border` and `absolute positioning`
